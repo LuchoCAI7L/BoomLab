@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoomLab Navbar</title>
+  <link rel="stylesheet" href="stylesinicio.css">
+</head>
+
+<body>
+
+  <div class="socialbar">
+    <a href="#"><img src="img/icons8-whatsapp-50.svg" width="25px"></a>
+    <a href="#"><img src="img/icons8-youtube-50.svg" width="25px"></a>
+    <a href="#"><img src="img/icons8-instagram-50.svg" width="25px"></a>
+    <a href="#"><img src="img/icons8-x-50.svg" width="25px"></a>
+    <a href="#"><img src="img/icons8-facebook-50.svg" width="25px"></a>
+  </div>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="img/84e1547b-853e-495f-80eb-331e90d49f80.png" alt="logo">
+      <span>BoomLab<br>Eventos</span>
+    </div>
+    <div class="menuhamburguesa">&#9776;</div>
+  </div>
+
+  <div class="menu" id="menu">
+    <span class="cierre" href="menuhamburguesa">╳</span>
+    <a href="#">Inicio</a>
+    <a href="#">Sobre BoomLab</a>
+    <a href="#">Contacto</a>
+    <a href="#">Servicios</a>
+    <a href="#">Próximos eventos</a>
+  </div>
+
+  <div class="carrusel-container">
+    <div class="carrusel">
+      <div class="carrusel-inner">
+        <div class="slide-active">
+          <img
+            src="https://media.licdn.com/dms/image/v2/C5612AQGbvv_Zj5JQ1w/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1551108267663?e=2147483647&v=beta&t=uau57Gh-xmNbI30zoJ5FHU3tvWHjKyGhaz6uxuN5Rjc"
+            alt="Slide 1">
+          <div class="slide-content">
+
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://www.sillapilable.com/wp-content/uploads/2024/09/evento-corporativo.jpg" alt="Slide 2">
+          <div class="slide-content">
+
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnRvfGVufDB8fDB8fHww"
+            alt="Slide 3">
+          <div class="slide-content">
+
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://billetto.es/blog/wp-content/uploads/2019/08/yvette-de-wit-8XLapfNMW04-unsplash-e1563798066132.jpg"
+            alt="Slide 4">
+          <div class="slide-content">
+
+          </div>
+        </div>
+        
+        <div class="slide">
+          <img src="https://wallpapers.com/images/hd/fiesta-background-3840-x-2160-utk80kkvqrlbf7ub.jpg" alt="Slide 5">
+          <div class="slide-content">
+
+          </div>
+        </div>
+      </div>
+
+      <button class="carrusel-btn prev" onclick="changeSlide(-1)">❮</button>
+      <button class="carrusel-btn next" onclick="changeSlide(1)">❯</button>
+
+      <div class="carrusel-indicators">
+        <span class="indicator active" onclick="currentSlide(0)"></span>
+        <span class="indicator" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
+        
+      </div>
+    </div>
+  </div>
+  <button class="boton">Contactanos</button>
+
+  <h2>CUBRIMOS</h2>
+
+  <p>Fiestas de fin de año, Eventos Corporativos, Fiestas de 15 Años,
+Casamientos, Eventos Municipales, Carnavales, Inauguraciones,
+Bar Mitzvah, Bat Mitzvah, Convenciones, Eventos de Incentivo,
+Actividades de Integración, Fiestas Provinciales, Family Day,
+Lanzamiento de Productos, Cumpleaños, Aniversarios y toda
+clase de eventos.</p>
+
+<h2>PROVEEMOS</h2>
+
+<p>Artistas, Personalidades, Celebrities, Famosos, Influencers,
+Shows de animación, Bandas en vivo, Shows lumínicos,
+Batucadas, Humoristas, Shows de tango y folklore,
+Shows Infantiles, Shows Liricos, Shows de electrónica
+y percusión, Bossa, Jazz, Artistas de recepción, Personajes,
+Entretenimiento, Técnica (Sonido, Pantallas LED) y más.</p>
+
+  <script src="inicio.js"></script>
+
+</body>
+
+</html>

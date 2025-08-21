@@ -1,0 +1,233 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      background-color: #054A61;
+    }
+
+    .carrusel-container {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .carrusel {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px var(--shadow-color);
+    }
+
+    .carrusel-inner {
+      position: relative;
+      width: 100%;
+      height: 185px;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    .slide img {
+      width: 300px;
+      height: 185px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .slide-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      padding: 40px 30px 30px;  
+    }
+
+    .slide:hover .slide-content {
+      transform: translateY(0);
+    }
+
+    .slide-content h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .slide-content p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .carrusel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-size: 0.7rem;
+      z-index: 10;
+      box-shadow: 0 4px 12px var(--shadow-color);
+    }
+
+    .carrusel-btn:hover {
+      transform: translateY(-50%) scale(1.1);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .carrusel-btn.prev {
+      left: 23px;
+    }
+
+    .carrusel-btn.next {
+      right: 23px;
+    }
+
+    .carrusel-indicators {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 10;
+    }
+
+    .indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .indicator.active {
+      background: var(--accent-color);
+      border-color: white;
+      transform: scale(1.3);
+    }
+
+    .navbar {
+      background: #054A61;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      position: relative;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo img {
+      width: 35px;
+      height: 50px;
+    }
+
+    .logo span {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .menuhamburguesa {
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      background: #333;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+
+    .menu a,
+    .menu span {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      border-bottom: 1px solid #555;
+    }
+
+    .menu.active {
+      right: 0;
+    }
+
+    .socialbar {
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 5px 0;
+    }
+
+    .socialbar a {
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .cierre {
+      top: 0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .boton{
+      border-radius: 30px;
+      display: flex;
+      justify-self: center;
+      margin-top: 25px;
+      padding-left: 18px;
+      padding-bottom: 5px;
+      padding-right: 18px;
+      padding-top: 5px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      color: #f5f5f5;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p {
+      text-align: center;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-top: 10px;
+      color: #f5f5f5;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
