@@ -41,18 +41,48 @@
   <h2>¿Qué ofrecemos?</h2>
 
   <div id="servicios">
-    <div class="tarjeta"><div id="data1">
-      <h4>Visibilidad de la Marca</h4>
-      <p>&bull; Logos en material gráfico (afiches, banners, escenografía, pantallas LED, etc.) <br>
-        &bull; Presencia en redes sociales (menciones, hashtags patrocinados, posteos dedicados) <br>
-        &bull; Stands personalizados en el evento</p></div>
-      <h3 id="visible1" onclick="muestradata(1)">Visibilidad de la Marca</h3></div>
-      <div class="tarjeta"><h3 id="visible2" onclick="muestradata(2)">Activaciones de la Marca</h3></div>
-        <div class="tarjeta"><h3 id="visible3" onclick="muestradata(3)">Acceso Exclusivo</h3></div>
-          <div class="tarjeta"><h3 id="visible4" onclick="muestradata(4)">Cobertura y Medición</h3></div>
+
+    <div class="tarjeta">
+      <div id="data1" onclick="ocultardata(1)">
+        <h4>Visibilidad de la Marca</h4>
+        <p>&bull; Logos en material gráfico (afiches, banners, escenografía, pantallas LED, etc.) <br>
+          &bull; Presencia en redes sociales (menciones, hashtags patrocinados, posteos dedicados) <br>
+          &bull; Stands personalizados en el evento</p>
+      </div>
+      <h3 id="visible1" onclick="muestradata(1)">Visibilidad de la Marca</h3>
+    </div>
+
+    <div class="tarjeta">
+      <div id="data2" onclick="ocultardata(2)">
+        <h4>Activaciones de Marca</h4>
+        <p>&bull; Espacios interactivos para que los sponsors realicen juegos, sorteos o experiencias inmersivas. <br>
+          &bull; Sampling de productos: Entrega de muestras o regalos promocionales.</p>
+      </div>
+      <h3 id="visible2" onclick="muestradata(2)">Activaciones de Marca</h3>
+    </div>
+
+    <div class="tarjeta">
+      <div id="data3" onclick="ocultardata(3)">
+      <h4>Acceso exclusivo</h4>
+      <p>&bull; Entradas VIP para clientes o empleados de la marca. <br>
+        &bull; Meet & Greet con artistas o figuras destacadas del evento</p>
+    </div>
+    <h3 id="visible3" onclick="muestradata(3)">Acceso Exclusivo</h3>
   </div>
 
- <script src="servicio.js"></script>
+  <div class="tarjeta">
+    <div id="data4" onclick="ocultardata(4)">
+    <h4>Cobertura y Medición</h4>
+    <p>&bull; Informe de métricas post-evento: alcance, engagement, público impactado. <br>
+      &bull; Producción de contenido (fotos, videos, entrevistas) para que el sponsor utilice en sus canales. <br>
+      &bull; Cobertura en medios asociados o partners del evento.</p>
+  </div>
+  <h3 id="visible4" onclick="muestradata(4)">Cobertura y Medición</h3>
+  </div>
+
+  </div>
+
+  <script src="servicio.js"></script>
 </body>
 
 </html>

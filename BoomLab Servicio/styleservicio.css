@@ -115,6 +115,7 @@
     }
 
     h3 {
+      padding: 50px;
       color: white;
       display: flex;
       justify-content: center;
@@ -123,12 +124,12 @@
 
     .tarjeta {
       background-color: rgba(0, 0, 0, 0.65);
-      padding: 50px;
       margin-top: 15px;
     }
 
-    #data1 {
+    #data1, #data2, #data3, #data4 {
       display: none;
+      padding: 50px;
     }
 
     h4, p {

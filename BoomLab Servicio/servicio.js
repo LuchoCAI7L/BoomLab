@@ -25,3 +25,11 @@ function muestradata(data1){
 titulo.style.display='none';
 data.style.display='block';
 }
+
+function ocultardata(titulo1){
+  var titulo=document.getElementById('visible'+titulo1);
+  var data=document.getElementById('data'+titulo1);
+
+titulo.style.display='flex';
+data.style.display='none';
+}
