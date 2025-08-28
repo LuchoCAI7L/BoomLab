@@ -115,11 +115,24 @@
     }
 
     h3 {
-      margin-top: 15px;
-      padding: 50px;
-      background-color: black;
       color: white;
-      opacity: 75%;
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+    }
+
+    .tarjeta {
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 50px;
+      margin-top: 15px;
+    }
+
+    #data1 {
+      display: none;
+    }
+
+    h4, p {
+      color: white;
     }
 
 

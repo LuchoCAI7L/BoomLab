@@ -12,33 +12,16 @@ cierre.addEventListener('click', () => {
 
 });
 
-let currentSlideIndex = 0;
-const slides = document.querySelectorAll('.slide');
-const indicators = document.querySelectorAll('.indicator');
-const totalSlides = slides.length;
-changeSlide(0);
+const servicios = document.getElementById('servicios');
 
-function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove('active'));
-  indicators.forEach(indicator => indicator.classList.remove('active'));
+servicios.addEventListener('click', () => {
 
-  slides[index].classList.add('active');
-  indicators[index].classList.add('active');
-}
+});
 
-function changeSlide(direction) {
-  currentSlideIndex += direction;
+function muestradata(data1){
+  var titulo=document.getElementById('visible'+data1);
+  var data=document.getElementById('data'+data1);
 
-  if (currentSlideIndex >= totalSlides) {
-    currentSlideIndex = 0;
-  } else if (currentSlideIndex < 0) {
-    currentSlideIndex = totalSlides - 1;
-  }
-  console.log(currentSlideIndex);
-  showSlide(currentSlideIndex);
-}
-
-function currentSlide(index) {
-  currentSlideIndex = index - 1;
-  showSlide(currentSlideIndex);
+titulo.style.display='none';
+data.style.display='block';
 }
