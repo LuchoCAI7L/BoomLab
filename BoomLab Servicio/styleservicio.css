@@ -1,0 +1,126 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      background-color: #054A61;
+    }
+
+    .navbar {
+      background: #054A61;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      position: relative;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo img {
+      width: 35px;
+      height: 50px;
+    }
+
+    .logo span {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .menuhamburguesa {
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      background: #333;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+
+    .menu a,
+    .menu span {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      border-bottom: 1px solid #555;
+    }
+
+    .menu.active {
+      right: 0;
+    }
+
+    .socialbar {
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 5px 0;
+    }
+
+    .socialbar a {
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .cierre {
+      top: 0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .boton{
+      border-radius: 30px;
+      display: flex;
+      justify-self: center;
+      margin-top: 25px;
+      padding-left: 18px;
+      padding-bottom: 5px;
+      padding-right: 18px;
+      padding-top: 5px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #f5f5f5;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+      color: white;
+      font-size: 99%;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      margin-top: 15px;
+      padding: 50px;
+      background-color: black;
+      color: white;
+      opacity: 75%;
+    }
+
+
+
