@@ -1,0 +1,93 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      position: relative;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo img {
+      width: 35px;
+      height: 50px;
+    }
+    .logo span {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .menuhamburguesa {
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      background: #333;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+
+    .menu a , .menu span{
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      border-bottom: 1px solid #555;
+    }
+
+    .menu.active {
+      right: 0;
+    }
+
+    .socialbar {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 5px 0;
+    }
+
+    .socialbar a {
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .cierre {
+      top: 0;
+    }
+
+    html {
+        background-image: url(./img/FondoFiesta.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    .vidrio{
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3.4px);
+        -webkit-backdrop-filter: blur(3.4px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
