@@ -21,9 +21,11 @@ servicios.addEventListener('click', () => {
 function muestradata(data1){
   var titulo=document.getElementById('visible'+data1);
   var data=document.getElementById('data'+data1);
-
 titulo.style.display='none';
 data.style.display='block';
+data.classList.add("oculto");
+
+data.classList.remove("oculto");
 }
 
 function ocultardata(titulo1){
@@ -32,4 +34,5 @@ function ocultardata(titulo1){
 
 titulo.style.display='flex';
 data.style.display='none';
+data.classList.add("oculto");
 }

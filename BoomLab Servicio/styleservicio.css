@@ -125,16 +125,19 @@
     .tarjeta {
       background-color: rgba(0, 0, 0, 0.65);
       margin-top: 15px;
+      transition: all 0.5s ease;
     }
 
     #data1, #data2, #data3, #data4 {
       display: none;
       padding: 50px;
+      transition: all 2s linear;
+    }
+    .oculto{
+      color: #054A61;
+      height: 130px;
     }
 
     h4, p {
       color: white;
     }
-
-
-
