@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BoomLab Navbar</title>
-<link rel="stylesheet" href="stylesnav.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoomLab Navbar</title>
+    <link rel="stylesheet" href="ProximosEventos.css">
 </head>
+
 <body>
 
-  <div class="socialbar">
-    <a href="#"><img src="img/icons8-whatsapp-50.svg" width="25px"></a>
-    <a href="#"><img src="img/icons8-youtube-50.svg" width="25px"></a>
-    <a href="#"><img src="img/icons8-instagram-50.svg" width="25px"></a>
-    <a href="#"><img src="img/icons8-x-50.svg" width="25px"></a>
-    <a href="#"><img src="img/icons8-facebook-50.svg" width="25px"></a>
-  </div>
-
-  <div class="navbar">
-    <div class="logo">
-      <img src="img/84e1547b-853e-495f-80eb-331e90d49f80.png" alt="logo"> 
-      <span>BoomLab<br>Eventos</span>
+    <div class="socialbar">
+        <a href="#"><img src="img/icons8-whatsapp-50.svg" width="25px"></a>
+        <a href="#"><img src="img/icons8-youtube-50.svg" width="25px"></a>
+        <a href="#"><img src="img/icons8-instagram-50.svg" width="25px"></a>
+        <a href="#"><img src="img/icons8-x-50.svg" width="25px"></a>
+        <a href="#"><img src="img/icons8-facebook-50.svg" width="25px"></a>
     </div>
-    <div class="menuhamburguesa">&#9776;</div>
-  </div>
 
-  <div class="menu" id="menu">
-    <span class="cierre" href="menuhamburguesa">╳</span>
-    <a href="#">Inicio</a>
-    <a href="#">Sobre BoomLab</a>
-    <a href="#">Contacto</a>
-    <a href="#">Servicios</a>
-    <a href="#">Próximos eventos</a>
-  </div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/84e1547b-853e-495f-80eb-331e90d49f80.png" alt="logo">
+            <span>BoomLab<br>Eventos</span>
+        </div>
+        <div class="menuhamburguesa">&#9776;</div>
+    </div>
 
-  <script src="Nav.js"></script>
+    <div class="menu" id="menu">
+        <span class="cierre" href="menuhamburguesa">╳</span>
+        <a href="#">Inicio</a>
+        <a href="#">Sobre BoomLab</a>
+        <a href="#">Contacto</a>
+        <a href="#">Servicios</a>
+        <a href="#">Próximos eventos</a>
+    </div>
+    <div class="eventos">
+        <h1>Electronic Sunset</h1>
+        <h2>12 de julio de 2025</h2>
+        <img class="evento" src="Img1/Foto-de-Esteban-Salino-Tarditti-.webp" alt="Evento">
+        <div class="tarjeta">
+        <img class="circuloabrir" id="btnM1" onclick="muestra(1)"src="Img1/perfect-circle_icon-icons.com_53928.svg" alt="">
+        <img class="circuloabrir btnOculto" id="btnO1" onclick="oculta(1)" src="Img1/perfect-circle_icon-icons.com_53928.svg" alt="">
+        <h3 id="tarjeta1">Centro Cultural Konex, CABA <br>Una tarde-noche única con DJs en vivo, visuales inmersivas y barra de coctelería de autor. “Boom Sessions” es nuestra serie de eventos exclusivos para disfrutar de la música electrónica con puesta de sol, en espacios al aire libre y con una estética cuidada.
+
+            Cupos limitados. ¡Reservá tu lugar y viví la experiencia Boom!<h3>
+    </div>
+    </div>
+
+
+    <h1>Fiesta Sensorial</h1>
+    <h2>3 de agosto de 2025</h2>
+    <div class="evento">
+        <img class="evento" src="Img1/fiestas-electronicas00jpg.webp" alt="">
+    </div>
+
+    <script src="ProximosEventos.js"></script>
 
 </body>
+
 </html>

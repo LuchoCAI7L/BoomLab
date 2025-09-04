@@ -1,0 +1,177 @@
+body {
+    background-color: #418A97;
+    color: white;
+  }
+  .evento {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .fiesta {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .eventos {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .fiestas {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .navbar {
+    background: #004aad;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    position: relative;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .logo img {
+    width: 35px;
+    height: 50px;
+  }
+  .logo span {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .menuhamburguesa {
+    font-size: 26px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .menu a,
+  .menu span {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+  }
+  
+  .menu.active {
+    right: 0;
+  }
+  
+  .socialbar {
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px 0;
+  }
+  
+  .socialbar a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .cierre {
+    top: 0;
+  }
+  
+  .circuloabrir {
+    width: 20%;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .abrir {
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  .boton{
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    background-color: #418A97;
+    color: white;
+  }
+  
+  h3{
+    font-size: 15px;
+  }
+
+  
+ @-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.tarjeta{
+    h3{
+        display: none;
+    }
+    .btnOculto{
+        display: none;
+    }
+}
+h3.slide-in-top {
+    display: block;
+	-webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
